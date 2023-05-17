@@ -1,12 +1,12 @@
 import "./App.css";
-import ParentComponent from "Components/Modal/ParentComponent";
+import ModalNotice from "Components/Modal/ModalNotice";
 
 function App() {
 
 
   return (
     <>
-      <ParentComponent />
+      <ModalNotice />
     </>
   );
 }
