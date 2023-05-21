@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import {AiOutlineClose} from 'react-icons/ai';
 import AddToFavorite from './AddToFavorite/AddToFavorite';
 
-import css from './modal.module.css';
+import css from './newmodal.module.css';
 
 const ModalNotice = () => {
     const [modal, setModal] = useState(false);
@@ -79,11 +79,14 @@ useEffect(() => {
             <div onClick={toggleModal} className={css.overlay}></div>
             <div className={css.content}>
             <div className={css.imgWrap}>
-            <img src="" alt="" className={css.image} />
-            <div className={css.optionContainer}>
+            <img src=""   alt="animal" className={css.avatar} />
+            {/* <div className={css.optionContainer}> */}
             <p className={css.optionText}>option back</p>
+            {/* </div> */}
             </div>
-            </div>
+            <button className={css.closeBtn} onClick={toggleModal}>
+              <AiOutlineClose className={css.closeIcon}/>
+          </button>
             <div className={css.contentWrap}>
               <h2 className={css.title}>Title from BACKEND</h2>
               <ul>
@@ -119,21 +122,19 @@ useEffect(() => {
                     <a href={`tel:${phone}`} onClick={handlePhoneClick}>{phone}</a>
                 </p>
                 </li>
-                <li className={css.item}>
-                  <p className={css.itemTitle}>Comments:</p>
-                  <p className={css.description}>back</p>
-                </li>
                 
               </ul>
-              <div className={css.wrap}>
-              <AddToFavorite/>
-                <button className={css.button}>Contact</button>
-              </div>
-              </div>
-              <button className={css.closeBtn} onClick={toggleModal}>
-              <AiOutlineClose className={css.closeIcon}/>
-          </button>
             </div>
+            <div className={css.textWrap}>
+            <p className={css.textContent}>Comments: back</p>
+            
+                  </div>
+              <div className={css.wrap}>
+                <button className={css.button}>Contact</button>
+                <AddToFavorite/>
+              </div>
+              </div>
+              
           </div>
         )}
       </>

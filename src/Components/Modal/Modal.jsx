@@ -7,7 +7,7 @@ import css from './modal.module.css' // Import the CSS file
 
 function Modal({ option, onClose }) {
   const handleLogout = () => {
-    // Perform logout logic
+    
     onClose();
   };
 
