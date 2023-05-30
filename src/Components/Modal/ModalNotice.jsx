@@ -125,6 +125,7 @@ useEffect(() => {
                 
               </ul>
             </div>
+            
             <div className={css.textWrap}>
             <p className={css.textContent}>Comments: back</p>
             
