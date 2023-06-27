@@ -15,6 +15,7 @@ function Modal({ option, onClose }) {
     // Perform delete form logic
     //check 
     onClose();
+    console.log(onClose);
   };
 
   return (
