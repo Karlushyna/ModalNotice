@@ -41,8 +41,7 @@ function Modal({ option, onClose }) {
           <p>Are you sure you want to delete  BACKEND? </p>
             <p>You can`t undo this action.</p>
           <div className={css.buttonWrap}>
-          <button className={css.modalBtn}  onClick={onClose}>Cancel</button>
-          <button className={`${css.modalBtn} ${css.btnAgree}`}  onClick={handleDelete}>Yes <HiOutlineTrash className={css.icon} /></button>
+
           </div>
           <button className={css.closeBtn} onClick={onClose}>
               <AiOutlineClose className={css.closeIcon}/>
