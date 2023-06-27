@@ -13,7 +13,7 @@ function Modal({ option, onClose }) {
 
   const handleDelete = () => {
     // Perform delete form logic
-    //check one more time
+    //check 
     onClose();
   };
 
