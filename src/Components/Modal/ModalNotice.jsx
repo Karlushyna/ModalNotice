@@ -118,9 +118,7 @@ useEffect(() => {
                 </li>
                 <li className={css.item}>
                 <p className={css.itemTitle}>Phone:</p>
-                  <p className={css.description}>
-                    <a href={`tel:${phone}`} onClick={handlePhoneClick}>{phone}</a>
-                </p>
+                 
                 </li>
                 
               </ul>
